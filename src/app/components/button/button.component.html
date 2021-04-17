@@ -1,0 +1,26 @@
+<button
+  (click)="onCallServer($event)"
+  class="btn"
+  [ngClass]="getStatus()"
+  [disabled]="isLoading"
+>
+  <span
+    *ngIf="isLoading"
+    class="spinner-border spinner-border-sm"
+    role="status"
+    aria-hidden="true"
+  >
+  </span>
+  <span *ngIf="!isLoading"> {{ label }}</span>
+
+  <!-- optional -->
+  <!-- <span 
+      *ngIf="isLoading; else notLoading"
+      class="spinner-border spinner-border-sm"
+      role="status"
+      aria-hidden="true">
+    </span>
+    <ng-template #notLoading>
+      <span> {{label}}</span> 
+    </ng-template> -->
+</button>

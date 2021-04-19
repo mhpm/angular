@@ -8,9 +8,29 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe(
-      'Steak',
-      'Special Grilled Steak',
-      'https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?cs=srgb&dl=pexels-kasumi-loffler-3535383.jpg&fm=jpg'
+      'Sirloin',
+      'What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting',
+      'https://source.unsplash.com/random?steak'
+    ),
+    new Recipe(
+      'T-Bone',
+      'Special Grilled Steak What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting',
+      'https://source.unsplash.com/random?steak'
+    ),
+    new Recipe(
+      'RibEye',
+      'Special Grilled Steak What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting',
+      'https://source.unsplash.com/random?steak'
+    ),
+    new Recipe(
+      'Toma Hawk',
+      'Special Grilled Steak What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting',
+      'https://source.unsplash.com/random?steak'
+    ),
+    new Recipe(
+      'Mignon',
+      'Special Grilled Steak What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting',
+      'https://source.unsplash.com/random?steak'
     ),
   ];
 

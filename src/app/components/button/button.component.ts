@@ -1,13 +1,12 @@
-import { Component } from "@angular/core";
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['./button.component.css'],
 })
-
 export class ButtonComponent {
-  label: string = "Call Server"
+  @Input() label: string = 'Click';
   isLoading: boolean = true;
 
   constructor() {
@@ -17,13 +16,13 @@ export class ButtonComponent {
   }
 
   getStatus() {
-    return { 
+    return {
       'btn-primary': !this.isLoading,
-      'btn-light' : this.isLoading
-    }
+      'btn-light': this.isLoading,
+    };
   }
 
-  onCallServer(event:any) {   
+  onCallServer(event: any) {
     this.isLoading = true;
     setTimeout(() => {
       this.isLoading = false;
